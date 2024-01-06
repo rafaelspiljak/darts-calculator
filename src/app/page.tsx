@@ -461,7 +461,7 @@ export default function Home() {
                   </g>
                   <path
                     onClick={() => {
-                      setDialog(25);
+                      if (gameStarted) setDialog(25);
                     }}
                     d="M193.450001,176 C193.450001,185.085085 186.085085,192.450001 177,192.450001 C167.914915,192.450001 160.549999,185.085085 160.549999,176 C160.549999,166.914915 167.914915,159.549999 177,159.549999 C186.085085,159.549999 193.450001,166.914915 193.450001,176 L193.450001,176 Z"
                     id="InnerGreen"
@@ -470,8 +470,10 @@ export default function Home() {
                   ></path>
                   <path
                     onClick={() => {
-                      setDialog(25);
-                      setMultiplier(2);
+                      if (gameStarted) {
+                        setDialog(25);
+                        setMultiplier(2);
+                      }
                     }}
                     d="M183.9,177 C183.9,180.810765 180.810765,183.9 177,183.9 C173.189235,183.9 170.1,180.810765 170.1,177 C170.1,173.189235 173.189235,170.1 177,170.1 C180.810765,170.1 183.9,173.189235 183.9,177 L183.9,177 Z"
                     id="InnerRed"
@@ -490,7 +492,7 @@ export default function Home() {
                   <text
                     id="tspan6009"
                     onClick={() => {
-                      setDialog(20);
+                      if (gameStarted) setDialog(20);
                     }}
                   >
                     <tspan x="198.04829" y="28.17502">
@@ -499,7 +501,7 @@ export default function Home() {
                   </text>
                   <text
                     onClick={() => {
-                      setDialog(1);
+                      if (gameStarted) setDialog(1);
                     }}
                     id="tspan6897"
                   >
@@ -509,7 +511,7 @@ export default function Home() {
                   </text>
                   <text
                     onClick={() => {
-                      setDialog(18);
+                      if (gameStarted) setDialog(18);
                     }}
                     id="tspan6907"
                   >
@@ -519,7 +521,7 @@ export default function Home() {
                   </text>
                   <text
                     onClick={() => {
-                      setDialog(4);
+                      if (gameStarted) setDialog(4);
                     }}
                     id="tspan6913"
                   >
@@ -529,7 +531,7 @@ export default function Home() {
                   </text>
                   <text
                     onClick={() => {
-                      setDialog(13);
+                      if (gameStarted) setDialog(13);
                     }}
                     id="tspan6917"
                   >
@@ -539,7 +541,7 @@ export default function Home() {
                   </text>
                   <text
                     onClick={() => {
-                      setDialog(6);
+                      if (gameStarted) setDialog(6);
                     }}
                     id="tspan6968"
                   >
@@ -549,7 +551,7 @@ export default function Home() {
                   </text>
                   <text
                     onClick={() => {
-                      setDialog(10);
+                      if (gameStarted) setDialog(10);
                     }}
                     id="tspan6925"
                   >
@@ -559,7 +561,7 @@ export default function Home() {
                   </text>
                   <text
                     onClick={() => {
-                      setDialog(15);
+                      if (gameStarted) setDialog(15);
                     }}
                     id="tspan6929"
                   >
@@ -569,7 +571,7 @@ export default function Home() {
                   </text>
                   <text
                     onClick={() => {
-                      setDialog(2);
+                      if (gameStarted) setDialog(2);
                     }}
                     id="tspan6933"
                   >
@@ -579,7 +581,7 @@ export default function Home() {
                   </text>
                   <text
                     onClick={() => {
-                      setDialog(17);
+                      if (gameStarted) setDialog(17);
                     }}
                     id="tspan6977"
                   >
@@ -589,7 +591,7 @@ export default function Home() {
                   </text>
                   <text
                     onClick={() => {
-                      setDialog(3);
+                      if (gameStarted) setDialog(3);
                     }}
                     id="tspan6981"
                   >
@@ -599,7 +601,7 @@ export default function Home() {
                   </text>
                   <text
                     onClick={() => {
-                      setDialog(19);
+                      if (gameStarted) setDialog(19);
                     }}
                     id="tspan6985"
                   >
@@ -609,7 +611,7 @@ export default function Home() {
                   </text>
                   <text
                     onClick={() => {
-                      setDialog(7);
+                      if (gameStarted) setDialog(7);
                     }}
                     id="tspan6989"
                   >
@@ -619,7 +621,7 @@ export default function Home() {
                   </text>
                   <text
                     onClick={() => {
-                      setDialog(16);
+                      if (gameStarted) setDialog(16);
                     }}
                     id="tspan6993"
                   >
@@ -629,7 +631,7 @@ export default function Home() {
                   </text>
                   <text
                     onClick={() => {
-                      setDialog(8);
+                      if (gameStarted) setDialog(8);
                     }}
                     id="tspan6997"
                   >
@@ -639,7 +641,7 @@ export default function Home() {
                   </text>
                   <text
                     onClick={() => {
-                      setDialog(11);
+                      if (gameStarted) setDialog(11);
                     }}
                     id="tspan7013"
                   >
@@ -649,7 +651,7 @@ export default function Home() {
                   </text>
                   <text
                     onClick={() => {
-                      setDialog(14);
+                      if (gameStarted) setDialog(14);
                     }}
                     id="tspan7017"
                   >
@@ -659,7 +661,7 @@ export default function Home() {
                   </text>
                   <text
                     onClick={() => {
-                      setDialog(9);
+                      if (gameStarted) setDialog(9);
                     }}
                     id="tspan7021"
                   >
@@ -669,7 +671,7 @@ export default function Home() {
                   </text>
                   <text
                     onClick={() => {
-                      setDialog(12);
+                      if (gameStarted) setDialog(12);
                     }}
                     id="tspan7025"
                   >
@@ -679,7 +681,7 @@ export default function Home() {
                   </text>
                   <text
                     onClick={() => {
-                      setDialog(5);
+                      if (gameStarted) setDialog(5);
                     }}
                     id="tspan7029"
                   >
