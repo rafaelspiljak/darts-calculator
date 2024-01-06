@@ -796,6 +796,7 @@ export default function Home() {
             {results.map((result, index) => {
               return (
                 <div
+                  key={`result-${index}`}
                   className={`p-2 bg-black rounded-md border border-2 border-solid border-${
                     index === currentPlayerIndex ? "green-500" : "red-500"
                   }`}
