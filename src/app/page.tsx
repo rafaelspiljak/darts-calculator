@@ -798,27 +798,32 @@ export default function Home() {
                 <div
                   key={`result-${index}`}
                   className={`p-2 bg-black rounded-md border border-2 border-solid border-${
-                    index === currentPlayerIndex ? "green-500" : "red-500"
+                    index === currentPlayerIndex ? "[#22ff09]" : "red-500"
                   }`}
                 >
-                  {index === currentPlayerIndex
-                    ? result -
-                      currentThrow.reduce((prev, curr) => prev + curr, 0)
-                    : ""}{" "}
-                  {result === 0
-                    ? `${
-                        winnersArray.findIndex((winner) => winner === index) + 1
-                      }.`
-                    : result}
+                  <span className="text-[#22ff09]">
+                    {index === currentPlayerIndex
+                      ? result -
+                        currentThrow.reduce((prev, curr) => prev + curr, 0)
+                      : ""}
+                  </span>{" "}
+                  <span>
+                    {result === 0
+                      ? `${
+                          winnersArray.findIndex((winner) => winner === index) +
+                          1
+                        }.`
+                      : result}
+                  </span>
                 </div>
               );
             })}
           </div>
         </div>
       ) : (
-        <div className="flex-col flex">
-          <div>
-            players:{" "}
+        <div className="flex-col flex gap-2">
+          <div className="flex gap-2">
+            Players:{" "}
             <button
               onClick={() => {
                 if (numberOfPlayers > 1) {
@@ -837,8 +842,8 @@ export default function Home() {
               +
             </button>
           </div>
-          <div>
-            game:{" "}
+          <div className="flex gap-2">
+            Game:{" "}
             <button
               onClick={() => {
                 if (gameFrom > 301) {
@@ -859,13 +864,14 @@ export default function Home() {
           </div>
           <div>
             <button
+              className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
               onClick={() => {
                 setGameStarted(true);
                 const newResults = new Array(numberOfPlayers).fill(gameFrom);
                 setResults(newResults);
               }}
             >
-              start
+              Start
             </button>
           </div>
         </div>
